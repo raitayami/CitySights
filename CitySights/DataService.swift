@@ -12,14 +12,14 @@ struct DataService{
     let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String
     
     // function is async because it cna be fired off in the background,. so the main thread can be free to handle the ui while this function occurs in the background
-    func businessSearch() async {
+    func businessSearch() async -> [Business]{
         
         //Check if API is actaully there
         
         //Code below means confirm that api is real and not nil, else return out of this function businessSearch(), if it does exist, proceed with the code
         
         guard apiKey != nil else {
-            return
+            return [Business]()
         }
         
         //Create URL
@@ -38,8 +38,14 @@ struct DataService{
             do{
                 let (data, response) = try await URLSession.shared.data(for: request)
                 
-                print(data)
-                print(response)
+                // Parse
+                
+                let decoder = JSONDecoder()
+                let result = try decoder.decode(BusinessSearch.self, from: data)
+                
+                return result.businesses
+                    
+
             }
             catch{
                 print(error)
@@ -47,6 +53,9 @@ struct DataService{
             
         }
         
+        return [Business]()
     }
+    
+     
     
 }
