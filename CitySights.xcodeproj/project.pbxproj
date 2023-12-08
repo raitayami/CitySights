@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A32C20D92B231AE10038909A /* CalculateDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C20D82B231AE10038909A /* CalculateDistance.swift */; };
+		A32C20DB2B2327AE0038909A /* BusinessDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C20DA2B2327AE0038909A /* BusinessDetailView.swift */; };
 		A3516C5C2B2084F700617C61 /* CitySightsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3516C5B2B2084F700617C61 /* CitySightsApp.swift */; };
 		A3516C5E2B2084F700617C61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3516C5D2B2084F700617C61 /* ContentView.swift */; };
 		A3516C602B2084FA00617C61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3516C5F2B2084FA00617C61 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		A32C20D82B231AE10038909A /* CalculateDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateDistance.swift; sourceTree = "<group>"; };
+		A32C20DA2B2327AE0038909A /* BusinessDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailView.swift; sourceTree = "<group>"; };
 		A3516C582B2084F700617C61 /* CitySights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitySights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3516C5B2B2084F700617C61 /* CitySightsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySightsApp.swift; sourceTree = "<group>"; };
 		A3516C5D2B2084F700617C61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				A3516C5D2B2084F700617C61 /* ContentView.swift */,
+				A32C20DA2B2327AE0038909A /* BusinessDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3516C6F2B2097F500617C61 /* DataService.swift in Sources */,
+				A32C20DB2B2327AE0038909A /* BusinessDetailView.swift in Sources */,
 				A32C20D92B231AE10038909A /* CalculateDistance.swift in Sources */,
 				A3516C752B20A16A00617C61 /* BusinessSearch.swift in Sources */,
 				A3516C5E2B2084F700617C61 /* ContentView.swift in Sources */,
